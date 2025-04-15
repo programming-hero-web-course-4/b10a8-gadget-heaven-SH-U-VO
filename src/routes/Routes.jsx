@@ -3,6 +3,7 @@ import {
 } from "react-router-dom";
 import MainLayouts from "../layouts/MainLayouts";
 import Home from "../pages/Home"
+import Cards from "../components/Cards";
 
 const routes = createBrowserRouter([
     {
@@ -11,8 +12,21 @@ const routes = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home />
-            }
+                element: <Home />,
+                loader: () => fetch('../categories.json'),
+                children: [
+                    {
+                        path:'/',
+                        element:<Cards />,
+                        loader: () => fetch('../fakeData.json')
+                    },
+                    {
+                        path: '/category/:category',
+                        element: <Cards />,
+                        loader: () => fetch('../fakeData.json')
+                    },
+                ],
+            },
         ]
     },
 ]);

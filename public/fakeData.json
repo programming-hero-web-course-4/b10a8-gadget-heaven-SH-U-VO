@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "category": "MacBook",
+    "name": "MacBook Air M2",
+    "price": 1160.83,
+    "available": true,
+    "description": "A high-quality macbook product called MacBook Air M2, perfect for tech lovers.",
+    "specification": {
+      "color": "Blue",
+      "weight": "0.99 kg",
+      "warranty": "2 year(s)",
+      "brand": "TechWave"
+    },
+    "rating": 4.4,
+    "pic": "https://www.custommacbd.com/cdn/shop/products/macbook-air-midnight-Custom-Mac-BD_19bc48cd-60bd-4157-bf2b-8f38bbbb74dc.jpg?v=1655616307"
+  },
+  {
+    "id": 2,
+    "category": "Smart Watches",
+    "name": "TimeLoop Watch",
+    "price": 1364.93,
+    "available": false,
+    "description": "A high-quality smart watches product called TimeLoop Watch, perfect for tech lovers.",
+    "specification": {
+      "color": "Space Gray",
+      "weight": "0.90 kg",
+      "warranty": "2 year(s)",
+      "brand": "SkyNet"
+    },
+    "rating": 4.9,
+    "pic": "https://saltsmillshop.co.uk/cdn/shop/files/time-loop-1.jpg?v=1684333068"
+  },
+  {
+    "id": 3,
+    "category": "MacBook",
+    "name": "MacBook Air Retina",
+    "price": 168.51,
+    "available": false,
+    "description": "A high-quality macbook product called MacBook Air Retina, perfect for tech lovers.",
+    "specification": {
+      "color": "Space Gray",
+      "weight": "0.47 kg",
+      "warranty": "1 year(s)",
+      "brand": "TechWave"
+    },
+    "rating": 3.8,
+    "pic": "https://www.ryans.com/storage/products/main/apple-macbook-air-late-2020-apple-m1-chip-8gb-11607861922.webp"
+  },
+  {
+    "id": 4,
+    "category": "Smart Watches",
+    "name": "GearX Fusion",
+    "price": 261.82,
+    "available": true,
+    "description": "A high-quality smart watches product called GearX Fusion, perfect for tech lovers.",
+    "specification": {
+      "color": "Black",
+      "weight": "1.79 kg",
+      "warranty": "1 year(s)",
+      "brand": "ByteWorld"
+    },
+    "rating": 4.9,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPmMENONscNyb3JcDEkivBsFUB0fmDkcfgA&s"
+  },
+  {
+    "id": 5,
+    "category": "MacBook",
+    "name": "MacBook Air M2",
+    "price": 493.0,
+    "available": true,
+    "description": "A high-quality macbook product called MacBook Air M2, perfect for tech lovers.",
+    "specification": {
+      "color": "Black",
+      "weight": "0.24 kg",
+      "warranty": "1 year(s)",
+      "brand": "GigaCore"
+    },
+    "rating": 4.9,
+    "pic": "https://m.media-amazon.com/images/I/719C6bJv8jL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 6,
+    "category": "Accessories",
+    "name": "USB-C Hub",
+    "price": 2199.74,
+    "available": true,
+    "description": "A high-quality accessories product called USB-C Hub, perfect for tech lovers.",
+    "specification": {
+      "color": "Silver",
+      "weight": "0.47 kg",
+      "warranty": "2 year(s)",
+      "brand": "Apple"
+    },
+    "rating": 4.9,
+    "pic": "https://www.penguin.com.bd/wp-content/uploads/2025/01/ugreen-revodok-usb-c-hub-5-in-1-300x300.webp"
+  },
+  {
+    "id": 7,
+    "category": "Accessories",
+    "name": "Wireless Earbuds",
+    "price": 685.99,
+    "available": false,
+    "description": "A high-quality accessories product called Wireless Earbuds, perfect for tech lovers.",
+    "specification": {
+      "color": "Silver",
+      "weight": "1.05 kg",
+      "warranty": "3 year(s)",
+      "brand": "Apple"
+    },
+    "rating": 3.6,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSibpi1iuBINEcsOKYCfPR-WbmvxwcjbnaFDA&s"
+  },
+  {
+    "id": 8,
+    "category": "Smart Watches",
+    "name": "GearX Fusion",
+    "price": 632.37,
+    "available": false,
+    "description": "A high-quality smart watches product called GearX Fusion, perfect for tech lovers.",
+    "specification": {
+      "color": "Silver",
+      "weight": "0.25 kg",
+      "warranty": "1 year(s)",
+      "brand": "ByteWorld"
+    },
+    "rating": 5.0,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAckn9IC4SAKEfdqtF-x7iL8P7223Jd162rQ&s"
+  },
+  {
+    "id": 9,
+    "category": "Accessories",
+    "name": "USB-C Hub",
+    "price": 1934.6,
+    "available": true,
+    "description": "A high-quality accessories product called USB-C Hub, perfect for tech lovers.",
+    "specification": {
+      "color": "White",
+      "weight": "2.46 kg",
+      "warranty": "3 year(s)",
+      "brand": "TechWave"
+    },
+    "rating": 4.5,
+    "pic": "https://independenttechbd.com/wp-content/uploads/2022/04/5-in-1-USB-Type-C-1-500x500-2.jpg"
+  },
+  {
+    "id": 10,
+    "category": "Laptops",
+    "name": "AeroBook Pro",
+    "price": 1662.46,
+    "available": true,
+    "description": "A high-quality laptops product called AeroBook Pro, perfect for tech lovers.",
+    "specification": {
+      "color": "Space Gray",
+      "weight": "1.80 kg",
+      "warranty": "1 year(s)",
+      "brand": "ByteWorld"
+    },
+    "rating": 3.1,
+    "pic": "https://www.gizmochina.com/wp-content/uploads/2020/03/chuwi-aerobook-15.6.png"
+  },
+  {
+    "id": 11,
+    "category": "Iphone",
+    "name": "iPhone 15 Pro Max",
+    "price": 994.75,
+    "available": true,
+    "description": "A high-quality iphone product called iPhone 15 Pro Max, perfect for tech lovers.",
+    "specification": {
+      "color": "Black",
+      "weight": "0.40 kg",
+      "warranty": "1 year(s)",
+      "brand": "GigaCore"
+    },
+    "rating": 4.6,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5i_e-tDSrMJR64My7I85owHuIylNd2eQ7QA&s"
+  },
+  {
+    "id": 12,
+    "category": "Smart Watches",
+    "name": "TimeLoop Watch",
+    "price": 1796.09,
+    "available": true,
+    "description": "A high-quality smart watches product called TimeLoop Watch, perfect for tech lovers.",
+    "specification": {
+      "color": "Space Gray",
+      "weight": "2.82 kg",
+      "warranty": "1 year(s)",
+      "brand": "GigaCore"
+    },
+    "rating": 4.3,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDYzMVInlfVqJCmzafuo6cMKCytVGjDXPG4A&s"
+  },
+  {
+    "id": 13,
+    "category": "Accessories",
+    "name": "USB-C Hub",
+    "price": 2711.83,
+    "available": false,
+    "description": "A high-quality accessories product called USB-C Hub, perfect for tech lovers.",
+    "specification": {
+      "color": "Black",
+      "weight": "0.89 kg",
+      "warranty": "3 year(s)",
+      "brand": "SkyNet"
+    },
+    "rating": 4.3,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGSxeJH9N084uAeeImBY6xsFyw0x3kZ4v2NA&s"
+  },
+  {
+    "id": 14,
+    "category": "Laptops",
+    "name": "AeroBook Pro",
+    "price": 244.83,
+    "available": true,
+    "description": "A high-quality laptops product called AeroBook Pro, perfect for tech lovers.",
+    "specification": {
+      "color": "White",
+      "weight": "2.04 kg",
+      "warranty": "3 year(s)",
+      "brand": "Apple"
+    },
+    "rating": 3.3,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbwtIqVKC0jlzm7DSs6a-jxIK0tCkr-eynQ&s"
+  },
+  {
+    "id": 15,
+    "category": "Laptops",
+    "name": "EliteBook Fusion",
+    "price": 2365.02,
+    "available": false,
+    "description": "A high-quality laptops product called EliteBook Fusion, perfect for tech lovers.",
+    "specification": {
+      "color": "Space Gray",
+      "weight": "1.53 kg",
+      "warranty": "1 year(s)",
+      "brand": "SkyNet"
+    },
+    "rating": 3.4,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Yl5XkRp_I2SKL-ubUH3p-2W9jBPPjhwG-w&s"
+  },
+  {
+    "id": 16,
+    "category": "Accessories",
+    "name": "Mechanical Keyboard",
+    "price": 1285.78,
+    "available": true,
+    "description": "A high-quality accessories product called Mechanical Keyboard, perfect for tech lovers.",
+    "specification": {
+      "color": "Black",
+      "weight": "0.39 kg",
+      "warranty": "2 year(s)",
+      "brand": "ByteWorld"
+    },
+    "rating": 4.4,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR81C65R8qml4DW-oRfMh409HLU0ZFR4B28dA&s"
+  },
+  {
+    "id": 17,
+    "category": "Smart Watches",
+    "name": "FitNest Mini",
+    "price": 1399.89,
+    "available": false,
+    "description": "A high-quality smart watches product called FitNest Mini, perfect for tech lovers.",
+    "specification": {
+      "color": "White",
+      "weight": "0.55 kg",
+      "warranty": "1 year(s)",
+      "brand": "SkyNet"
+    },
+    "rating": 4.2,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4K8ykOvLriCEREoK6Phb7e15EQjt85FtGSg&s"
+  },
+  {
+    "id": 18,
+    "category": "Smart Watches",
+    "name": "PulseFit Pro",
+    "price": 2060.54,
+    "available": true,
+    "description": "A high-quality smart watches product called PulseFit Pro, perfect for tech lovers.",
+    "specification": {
+      "color": "Space Gray",
+      "weight": "1.73 kg",
+      "warranty": "3 year(s)",
+      "brand": "ByteWorld"
+    },
+    "rating": 3.6,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66r1L5omDlq9RNVnoFdAn4tCmm-WGMKLDDQ&s"
+  },
+  {
+    "id": 19,
+    "category": "Smart Watches",
+    "name": "TimeLoop Watch",
+    "price": 2421.15,
+    "available": true,
+    "description": "A high-quality smart watches product called TimeLoop Watch, perfect for tech lovers.",
+    "specification": {
+      "color": "Silver",
+      "weight": "2.97 kg",
+      "warranty": "2 year(s)",
+      "brand": "Apple"
+    },
+    "rating": 4.7,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVOUNpVZk2i8BawdaCGFcNgsMGeqz0bjO23g&s"
+  },
+  {
+    "id": 20,
+    "category": "Smart Watches",
+    "name": "PulseFit Pro",
+    "price": 1777.45,
+    "available": false,
+    "description": "A high-quality smart watches product called PulseFit Pro, perfect for tech lovers.",
+    "specification": {
+      "color": "Blue",
+      "weight": "1.20 kg",
+      "warranty": "1 year(s)",
+      "brand": "SkyNet"
+    },
+    "rating": 3.4,
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV04qJJ74qr_T1W8kuqljRtgCkKnaf6EKLFQ&s"
+  }
+]

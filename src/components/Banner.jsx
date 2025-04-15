@@ -19,7 +19,7 @@ const Banner = () => {
             </div>
 
             {/* img section */}
-            <div className='relative w-3/5 mx-auto flex justify-center items-center -mt-30'>
+            <div className='relative w-3/5 mx-auto flex justify-center items-center -mt-40'>
 
                 {/* Glass Background */}
                 <div
