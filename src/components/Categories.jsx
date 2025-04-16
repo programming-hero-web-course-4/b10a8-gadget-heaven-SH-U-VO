@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 
 const Categories = ({ categories }) => {
-    console.log(categories)
     return (
         <div>
             <div className='rounded-2xl  flex flex-col items-center gap-5'>

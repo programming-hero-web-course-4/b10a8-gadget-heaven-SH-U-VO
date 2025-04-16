@@ -7,6 +7,7 @@ import Cards from '../components/Cards';
 const Home = () => {
 
     const categories = useLoaderData();
+    
     return (
         <div>
             {/*Banner  */}

@@ -1,8 +1,9 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Card = ({ card }) => {
 
-    const {pic, name, price} = card;
+    const {pic, name, price,id} = card;
     return (
         <div>
 
@@ -16,7 +17,10 @@ const Card = ({ card }) => {
                     <h2 className="card-title">{name}</h2>
                     <p>Price: {price} $</p>
                     <div className="card-actions justify-start">
-                        <button className="btn rounded-4xl text-[#9538E2] border border-[#9538E2]">View Details</button>
+                        <NavLink 
+                        className="btn rounded-4xl text-[#9538E2] border border-[#9538E2]"
+                        to={`/card/${id}`}
+                        >View Details</NavLink>
                     </div>
                 </div>
             </div>

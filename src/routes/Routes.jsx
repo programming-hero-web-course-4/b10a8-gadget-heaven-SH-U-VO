@@ -4,6 +4,8 @@ import {
 import MainLayouts from "../layouts/MainLayouts";
 import Home from "../pages/Home"
 import Cards from "../components/Cards";
+import CardDetails from "../pages/CardDetails";
+import Dashboard from "../pages/Dashboard";
 
 const routes = createBrowserRouter([
     {
@@ -27,6 +29,15 @@ const routes = createBrowserRouter([
                     },
                 ],
             },
+            {
+                path: '/card/:id',
+                element: <CardDetails />,
+                loader: () => fetch('../fakeData.json')
+            },
+            {
+                path: '/dashboard',
+                element:<Dashboard />
+            }
         ]
     },
 ]);
