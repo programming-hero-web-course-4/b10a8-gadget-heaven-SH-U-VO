@@ -3,15 +3,23 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FcLikePlaceholder } from "react-icons/fc";
 import { CiStar } from "react-icons/ci";
+import { addCart, addWishlist, getAllCarts } from '../utils';
 
 const CardDetails = () => {
     const data = useLoaderData();
     const { id } = useParams();
     const [card, setCard] = useState(null);
+    const [isCart, setIsCart] = useState(false)
 
     useEffect(() => {
         const singleData = data.find((card) => card.id == id);
         setCard(singleData);
+
+        const charts = getAllCarts()
+        const isExist = charts.find(item => item.id == singleData.id)
+        if (isExist) {
+            setIsCart(true)
+        }
     }, [data, id]);
 
     if (!card) {
@@ -19,6 +27,12 @@ const CardDetails = () => {
     }
 
     const { name, price, available, description, specification, rating, pic } = card;
+
+    // Handle Add to chart btn click
+    const handleCart = card => {
+        addCart(card)
+        setIsCart(true)
+    }
 
     return (
         <div>
@@ -42,7 +56,7 @@ const CardDetails = () => {
                         <div>
                             <h1 className="text-3xl font-bold p-3">{name}</h1>
                             <h3 className='font-bold p-3'>Price: ${price}</h3>
-                            <div className='btn btn-primary rounded-4xl p-3 border-2 border-green-600 text-green-700 bg-[#e4fddb]'>
+                            <div className={`btn btn-primary rounded-4xl p-3 border-2 bg-[#e4fddb] ${available ? 'border-green-600 text-green-700' : 'border-red-600 text-red-700'}`}>
                                 {available ? 'In Stock' : 'Out of Stock'}
                             </div>
                             <p className="py-6">{description}</p>
@@ -77,11 +91,17 @@ const CardDetails = () => {
                                 </div>
                             </div>
                             <div className='flex gap-4 items-center mt-4'>
-                                <button className="btn btn-wide bg-[#9538E2] text-white rounded-4xl">
+                                <button
+                                    disabled={isCart}
+                                    onClick={() => handleCart(card)}
+                                    className="btn btn-wide bg-[#9538E2] text-white rounded-4xl">
                                     Add To Cart
                                     <MdOutlineShoppingCart className='text-xl' />
                                 </button>
-                                <FcLikePlaceholder className='text-3xl' />
+                                <FcLikePlaceholder
+                                    className='text-3xl'
+                                    onClick={() => addWishlist(card)}
+                                />
                             </div>
                         </div>
                     </div>

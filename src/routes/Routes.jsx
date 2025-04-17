@@ -6,6 +6,9 @@ import Home from "../pages/Home"
 import Cards from "../components/Cards";
 import CardDetails from "../pages/CardDetails";
 import Dashboard from "../pages/Dashboard";
+import Statistics from "../pages/Statistics";
+import Cart from "../components/Cart";
+import Wishlist from "../components/Wishlist";
 
 const routes = createBrowserRouter([
     {
@@ -36,7 +39,26 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/dashboard',
-                element:<Dashboard />
+                element:<Dashboard />,
+                loader: () => fetch('../fakeData.json'),
+                children:[
+                    {
+                        path: '/dashboard',
+                        element:<Cart />,
+                    },
+                    {
+                        path:'/dashboard/cart',
+                        element: <Cart />
+                    },
+                    {
+                        path: '/dashboard/wishlist',
+                        element: <Wishlist />
+                    }
+                ]
+            },
+            {
+                path:'/statistics',
+                element: <Statistics />
             }
         ]
     },

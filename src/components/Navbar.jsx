@@ -1,8 +1,15 @@
 import React from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 import { FcLikePlaceholder } from "react-icons/fc";
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+
+  const links = <>
+    <li><NavLink to="/">Home</NavLink></li>
+    <li><NavLink to="/statistics"> Statistics </NavLink></li>
+    <li><NavLink to="/dashboard"> Dashboard</NavLink></li>
+  </>
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm">
@@ -14,23 +21,24 @@ const Navbar = () => {
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-              <li><a>Home</a></li>
-              <li><a>Statistics</a></li>
-              <li><a>Dashboard</a></li>
+              {links}
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">Gadget Heaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>Statistics</a></li>
-            <li><a>Dashboard</a></li>
+            {links}
           </ul>
         </div>
         <div className="navbar-end gap-7 text-2xl">
-        <FaShoppingCart />
-        <FcLikePlaceholder />
+          <Link to={'/dashboard/cart'}>
+            <FaShoppingCart className="text-3xl cursor-pointer" />
+          </Link>
+
+          <Link to={'/dashboard/wishlist'}>
+            <FcLikePlaceholder className="text-3xl cursor-pointer" />
+          </Link>
         </div>
       </div>
     </div>

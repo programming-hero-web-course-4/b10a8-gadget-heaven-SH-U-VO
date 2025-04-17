@@ -52,7 +52,7 @@
     "category": "Smart Watches",
     "name": "GearX Fusion",
     "price": 261.82,
-    "available": true,
+    "available": false,
     "description": "A high-quality smart watches product called GearX Fusion, perfect for tech lovers.",
     "specification": {
       "color": "Black",
