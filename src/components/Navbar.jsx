@@ -1,18 +1,27 @@
-import React from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 import { FcLikePlaceholder } from "react-icons/fc";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { getAllCarts, getAllWishlists } from '../utils';
 
 const Navbar = () => {
-
   const links = <>
     <li><NavLink to="/">Home</NavLink></li>
     <li><NavLink to="/statistics"> Statistics </NavLink></li>
     <li><NavLink to="/dashboard"> Dashboard</NavLink></li>
-  </>
+  </>;
+
+const cartItems = getAllCarts();
+const cartLength = cartItems.length;
+
+const wishlistItems = getAllWishlists();
+const wishlistLength = wishlistItems.length;
+
+const location = useLocation();
+const isHomePage = location.pathname === '/';
+
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className={isHomePage ? 'navbar p-20' : 'navbar bg-base-100'}>
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +33,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+          <a className=" font-bold text-3xl">Gadget Heaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -32,13 +41,27 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-7 text-2xl">
-          <Link to={'/dashboard/cart'}>
-            <FaShoppingCart className="text-3xl cursor-pointer" />
-          </Link>
+          <div className="relative">
+            <Link to={'/dashboard/cart'}>
+              <FaShoppingCart className="text-3xl cursor-pointer" />
+            </Link>
+            {cartLength > 0 && (
+              <span className="absolute top-[-8px] right-[-8px] bg-red-500 text-white rounded-full text-xs p-1">
+                {cartLength}
+              </span>
+            )}
+          </div>
 
-          <Link to={'/dashboard/wishlist'}>
-            <FcLikePlaceholder className="text-3xl cursor-pointer" />
-          </Link>
+          <div className="relative">
+            <Link to={'/dashboard/wishlist'}>
+              <FcLikePlaceholder className="text-3xl cursor-pointer" />
+            </Link>
+            {wishlistLength > 0 && (
+              <span className="absolute top-[-8px] right-[-8px] bg-red-500 text-white rounded-full text-xs p-1">
+                {wishlistLength}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </div>

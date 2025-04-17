@@ -3,10 +3,10 @@ import bannerImg from '../assets/img/banner.jpg'
 
 const Banner = () => {
     return (
-        <div>
+        <div className='p-10'>
 
             {/* Hero Section */}
-            <div className="hero bg-[#9538E2] min-h-screen">
+            <div className="hero bg-[#9538E2] min-h-screen rounded-3xl">
                 <div className="hero-content text-center">
                     <div className="text-white">
                         <h1 className="text-5xl font-bold">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
