@@ -34,7 +34,7 @@ const Cart = () => {
                 </div>
 
                 <div className='flex gap-5 items-center'>
-                    <p className='font-bold'>Total cost: ${cards.reduce((total, card) => total + card.price, 0).toFixed(2)}</p>
+                    <p className='font-bold'>Total cost: {cards.reduce((total, card) => total + card.price, 0).toFixed(2)}$</p>
 
                     <button
                         onClick={() => {
@@ -87,14 +87,16 @@ const Cart = () => {
 
                         {/* Open the modal using document.getElementById('ID').showModal() method */}
 
-                        <dialog id="my_modal_1" className="modal">
-                            <div className="modal-box">
-                                <h3 className="font-bold text-lg">Hello!</h3>
-                                <p className="py-4">Press ESC key or click the button below to close</p>
-                                <div className="modal-action">
+                        <dialog id="my_modal_1" className="modal ">
+                            <div className="modal-box flex flex-col items-center">
+                                <h3 className="font-bold text-lg">Payment Successfully</h3>
+                                <p className="py-4">
+                                    Thanks for purchasing. <br />
+                                    Total: {cards.reduce((total, card) => total + card.price, 0).toFixed(2)}$</p>
+                                <div>
                                     <form method="dialog">
                                         {/* if there is a button in form, it will close the modal */}
-                                        <NavLink to={'/'} className="btn">Close</NavLink>
+                                        <NavLink to={'/'} className="btn w-full rounded-3xl font-bold">Close</NavLink>
                                     </form>
                                 </div>
                             </div>
@@ -107,3 +109,4 @@ const Cart = () => {
 };
 
 export default Cart;
+

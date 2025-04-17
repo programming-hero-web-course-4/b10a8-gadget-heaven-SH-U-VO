@@ -56,7 +56,7 @@ const CardDetails = () => {
                         <div>
                             <h1 className="text-3xl font-bold p-3">{name}</h1>
                             <h3 className='font-bold p-3'>Price: ${price}</h3>
-                            <div className={`btn btn-primary rounded-4xl p-3 border-2 bg-[#e4fddb] ${available ? 'border-green-600 text-green-700' : 'border-red-600 text-red-700'}`}>
+                            <div className={`btn btn-primary rounded-4xl p-3 border-2 ${available ? 'border-green-600 text-green-700 bg-[#e4fddb]' : 'border-red-600 text-red-700 bg-[#fddbdb]'}`}>
                                 {available ? 'In Stock' : 'Out of Stock'}
                             </div>
                             <p className="py-6">{description}</p>

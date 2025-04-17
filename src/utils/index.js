@@ -36,6 +36,7 @@ const addCart = (card) => {
   const carts = getAllCarts();
   const isExist = carts.find((item) => item.id == card.id);
   if (isExist) return toast.error('Product already exists!');
+  if(!card.available) return toast.error('Out of Stock !')
 
   carts.push(card);
   localStorage.setItem('carts', JSON.stringify(carts));

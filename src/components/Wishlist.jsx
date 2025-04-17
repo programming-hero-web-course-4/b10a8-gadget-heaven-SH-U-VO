@@ -20,13 +20,13 @@ const Wishlist = () => {
     return (
         <div>
 
-                        {/* Cart Section */}
-                        <div className='flex justify-between p-12'>
+            {/* Cart Section */}
+            <div className='flex justify-between p-12'>
                 <div>
                     <h1 className='text-2xl font-bold'>Wishlist</h1>
                 </div>
 
-                
+
             </div>
 
 
